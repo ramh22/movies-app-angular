@@ -1,0 +1,25 @@
+<div class="row">
+<div class="col-6 m-auto">
+    <!-- <a> -->
+        <div class="card">
+            <img [src]="'http://image.tmdb.org/t/p/w500/'+selectedMovie.poster_path" class="card-img-top"
+                alt={{selectedMovie.title}}>
+            <div class="card-body">
+                <h5 class="card-title">{{selectedMovie.title}}</h5>
+                <!-- directive -->
+                <p class="card-text"> {{selectedMovie.overview}}</p>
+
+                <!-- <a class="btn btn-success m-1" (click)="goDetails(movie.id)">Details</a> -->
+                 <!-- <a class="btn btn-success m-1" [routerLink]="['/details', selectedMovie.id]">Details</a> -->
+
+                <!-- <button class="btn btn-primary">watch</button> -->
+
+                <!-- <div>{{movie.release_date|date:'short'}}</div> -->
+                <!-- <app-movie-rating [rating]="movie.vote_average/2"></app-movie-rating> -->
+
+                <!-- <button (click)="watch(movie.title)"></button> -->
+            </div>
+        </div>
+    <!-- </a> -->
+</div>
+</div>
